@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XDO-uh-RhU">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ENotes-->
+        <scene sceneID="Hxi-Ly-Z63">
+            <objects>
+                <collectionViewController id="Whh-rN-aqn" customClass="ExtraNotesCollectionViewController" customModule="ExtraNotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="BNQ-HJ-mgc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Os2-Eb-P4a">
+                            <size key="itemSize" width="172" height="156"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="eNotesCell" id="g73-S9-jg8" customClass="ExtraNotesCollectionViewCell" customModule="ExtraNotes" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="172" height="156"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="172" height="156"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kWh-lG-VKY">
+                                            <rect key="frame" x="5" y="5" width="162" height="146"/>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeX-Xh-XWx">
+                                            <rect key="frame" x="33" y="23" width="106" height="110"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
+                                        </textView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkMark" translatesAutoresizingMaskIntoConstraints="NO" id="djE-fK-Mgb">
+                                            <rect key="frame" x="63" y="55" width="46" height="46"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="kWh-lG-VKY" secondAttribute="bottom" constant="5" id="9AX-pp-5I9"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="djE-fK-Mgb" secondAttribute="bottom" constant="47" id="Jwt-jb-MLW"/>
+                                    <constraint firstItem="zeX-Xh-XWx" firstAttribute="centerX" secondItem="kWh-lG-VKY" secondAttribute="centerX" id="Kv8-dc-Fhb"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="djE-fK-Mgb" secondAttribute="trailing" constant="55" id="RaJ-ve-k1Y"/>
+                                    <constraint firstItem="kWh-lG-VKY" firstAttribute="bottomMargin" secondItem="zeX-Xh-XWx" secondAttribute="bottom" constant="10" id="Uln-Yw-1XQ"/>
+                                    <constraint firstItem="djE-fK-Mgb" firstAttribute="top" secondItem="g73-S9-jg8" secondAttribute="topMargin" constant="47" id="Up6-Dg-a2Z"/>
+                                    <constraint firstItem="kWh-lG-VKY" firstAttribute="leading" secondItem="g73-S9-jg8" secondAttribute="leading" constant="5" id="Vky-K2-cKs"/>
+                                    <constraint firstItem="kWh-lG-VKY" firstAttribute="centerX" secondItem="g73-S9-jg8" secondAttribute="centerX" id="YVc-j0-htZ"/>
+                                    <constraint firstItem="kWh-lG-VKY" firstAttribute="trailingMargin" secondItem="zeX-Xh-XWx" secondAttribute="trailing" constant="20" id="ZMX-L4-GRl"/>
+                                    <constraint firstItem="djE-fK-Mgb" firstAttribute="centerY" secondItem="g73-S9-jg8" secondAttribute="centerY" id="aGE-Sj-i5n"/>
+                                    <constraint firstAttribute="trailing" secondItem="kWh-lG-VKY" secondAttribute="trailing" constant="5" id="aak-wd-DYY"/>
+                                    <constraint firstItem="djE-fK-Mgb" firstAttribute="centerX" secondItem="g73-S9-jg8" secondAttribute="centerX" id="d8k-8v-t7s"/>
+                                    <constraint firstItem="zeX-Xh-XWx" firstAttribute="top" secondItem="kWh-lG-VKY" secondAttribute="topMargin" constant="10" id="dbb-5e-ZHK"/>
+                                    <constraint firstItem="kWh-lG-VKY" firstAttribute="centerY" secondItem="g73-S9-jg8" secondAttribute="centerY" id="eQa-Iy-c0T"/>
+                                    <constraint firstItem="zeX-Xh-XWx" firstAttribute="centerY" secondItem="kWh-lG-VKY" secondAttribute="centerY" id="jQu-e6-U69"/>
+                                    <constraint firstItem="kWh-lG-VKY" firstAttribute="top" secondItem="g73-S9-jg8" secondAttribute="top" constant="5" id="lE3-lk-EnK"/>
+                                    <constraint firstItem="zeX-Xh-XWx" firstAttribute="leading" secondItem="kWh-lG-VKY" secondAttribute="leadingMargin" constant="20" id="n8a-vq-WcS"/>
+                                    <constraint firstItem="djE-fK-Mgb" firstAttribute="leading" secondItem="g73-S9-jg8" secondAttribute="leadingMargin" constant="55" id="zqz-IR-IUM"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="checkMarkImage" destination="djE-fK-Mgb" id="Gaz-55-ubR"/>
+                                    <outlet property="eNoteImageView" destination="kWh-lG-VKY" id="z8n-zk-AjI"/>
+                                    <outlet property="eNoteTextView" destination="zeX-Xh-XWx" id="CPR-J1-2JT"/>
+                                    <segue destination="vJA-vV-TJw" kind="presentation" identifier="editSelectedENote" id="zBs-1J-6tA"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Whh-rN-aqn" id="YLb-QP-xTW"/>
+                            <outlet property="delegate" destination="Whh-rN-aqn" id="UHG-0Z-Sog"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="ENotes" id="Yv5-wp-E2Y">
+                        <leftBarButtonItems>
+                            <barButtonItem image="Help" id="85I-GU-KoK">
+                                <color key="tintColor" red="0.28216289500000002" green="0.5672333289" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="hXT-Ve-jgD" kind="popoverPresentation" identifier="helpENote" popoverAnchorBarButtonItem="85I-GU-KoK" id="qlQ-YT-UZx">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="Trash" id="FRK-Tg-qAw">
+                                <connections>
+                                    <action selector="deleteENotes:" destination="Whh-rN-aqn" id="ZIZ-tS-WrK"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="Share" id="6wG-bf-K4E">
+                                <connections>
+                                    <action selector="shareENotes:" destination="Whh-rN-aqn" id="Dt8-eX-45C"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="Calendar" id="x4O-fn-R5Z">
+                                <color key="tintColor" red="0.28216289500000002" green="0.5672333289" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="sendToCalendarENote:" destination="Whh-rN-aqn" id="9E9-Km-wLe"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem image="Plus" id="bP4-o8-Z0y">
+                                <connections>
+                                    <action selector="addENotes:" destination="Whh-rN-aqn" id="cpQ-cu-FPz"/>
+                                    <segue destination="R2p-9e-3Eg" kind="presentation" identifier="addSegue" modalPresentationStyle="fullScreen" id="Afa-ES-DAQ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="cancel" id="Cbj-aR-YFs">
+                                <connections>
+                                    <action selector="cancelSelectionOfENotes:" destination="Whh-rN-aqn" id="q9d-rn-Hux"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addENoteButton" destination="bP4-o8-Z0y" id="7vJ-Qc-8ER"/>
+                        <outlet property="calendarENoteButton" destination="x4O-fn-R5Z" id="8et-dJ-Vfw"/>
+                        <outlet property="cancelButton" destination="Cbj-aR-YFs" id="eCt-pq-haE"/>
+                        <outlet property="deleteENoteButton" destination="FRK-Tg-qAw" id="mY0-6B-gLa"/>
+                        <outlet property="helpButton" destination="85I-GU-KoK" id="SE2-LW-8qK"/>
+                        <outlet property="shareENoteButton" destination="6wG-bf-K4E" id="g45-k0-DaY"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L4r-X1-A88" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1007.2" y="-457.42128935532236"/>
+        </scene>
+        <!--Choose  Theme...-->
+        <scene sceneID="bSh-Pf-scU">
+            <objects>
+                <collectionViewController id="FHk-ze-fES" customClass="ExtraNotesModelCollectionViewController" customModule="ExtraNotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="hej-E4-HGR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bZD-0Q-oAW">
+                            <size key="itemSize" width="361" height="264"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ENotesModelCell" id="JCA-Wi-3Mf" customClass="ExtraNotesModelCollectionViewCell" customModule="ExtraNotes" customModuleProvider="target">
+                                <rect key="frame" x="7" y="0.0" width="361" height="264"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="264"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="swa-4E-Zcm">
+                                            <rect key="frame" x="38" y="17" width="285" height="231"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottomMargin" secondItem="swa-4E-Zcm" secondAttribute="bottom" constant="8" id="2ZG-21-bE9"/>
+                                    <constraint firstItem="swa-4E-Zcm" firstAttribute="leading" secondItem="JCA-Wi-3Mf" secondAttribute="leadingMargin" constant="30" id="8tk-k7-ZoV"/>
+                                    <constraint firstItem="swa-4E-Zcm" firstAttribute="top" secondItem="JCA-Wi-3Mf" secondAttribute="topMargin" constant="9" id="eNm-gE-w68"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="swa-4E-Zcm" secondAttribute="trailing" constant="30" id="hBk-HH-cjz"/>
+                                    <constraint firstItem="swa-4E-Zcm" firstAttribute="centerX" secondItem="JCA-Wi-3Mf" secondAttribute="centerX" id="nHs-vc-NhT"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="eNoteImageView" destination="swa-4E-Zcm" id="Ep3-6t-3iy"/>
+                                    <segue destination="7sb-4P-dAu" kind="show" identifier="selectedExtraNote" id="cxM-3p-X90"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="FHk-ze-fES" id="C8p-LI-32w"/>
+                            <outlet property="delegate" destination="FHk-ze-fES" id="bcw-Q2-eKm"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Choose  Theme..." id="e1W-ee-Ips">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="W8e-1o-5zH">
+                            <connections>
+                                <action selector="cancelModelButton:" destination="FHk-ze-fES" id="NR8-Uo-M78"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DPW-6A-6Ro" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3947" y="-380"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sxC-uW-32b">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XDO-uh-RhU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ain-5u-cwn">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Whh-rN-aqn" kind="relationship" relationship="rootViewController" id="DTN-8E-aSC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N57-ru-YGI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="-456"/>
+        </scene>
+        <!--Help Extra Notes View Controller-->
+        <scene sceneID="X0J-HN-HhH">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="hXT-Ve-jgD" customClass="HelpExtraNotesViewController" customModule="ExtraNotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="a0d-hM-t7i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.84999999999999998" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xam-nK-GbG">
+                                <rect key="frame" x="20" y="20" width="335" height="684"/>
+                                <color key="backgroundColor" red="1" green="0.6860751843336671" blue="0.32589513002196446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xam-nK-GbG" firstAttribute="top" secondItem="VLo-vP-BWR" secondAttribute="top" constant="20" id="3pg-ZC-LfT"/>
+                            <constraint firstItem="VLo-vP-BWR" firstAttribute="bottom" secondItem="Xam-nK-GbG" secondAttribute="bottom" constant="20" id="D8i-ra-eKp"/>
+                            <constraint firstItem="Xam-nK-GbG" firstAttribute="leading" secondItem="VLo-vP-BWR" secondAttribute="leading" constant="20" id="FDf-ls-4U8"/>
+                            <constraint firstItem="VLo-vP-BWR" firstAttribute="trailing" secondItem="Xam-nK-GbG" secondAttribute="trailing" constant="20" id="lml-J1-lp9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VLo-vP-BWR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5CH-2Z-U2x"/>
+                    <connections>
+                        <outlet property="helpENotesTextView" destination="Xam-nK-GbG" id="ZZQ-NE-RWn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ELB-4I-2hg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1420" y="507.79610194902551"/>
+        </scene>
+        <!--Extra Notes-->
+        <scene sceneID="AAo-F4-3dr">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="vJA-vV-TJw" customClass="EditSelectedExtraNoteViewController" customModule="ExtraNotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.94999999999999996" contentMode="scaleToFill" id="lEB-Mm-Q3v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Ku-nw-3tC">
+                                <rect key="frame" x="66" y="68" width="243" height="305"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eh6-y8-8A5">
+                                <rect key="frame" x="16" y="408" width="343" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="FHO-fY-Rsm"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8iu-Hg-4PL">
+                                    <size key="itemSize" width="70" height="70"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ENotesEditedModelCell" id="y2g-W9-2TL" customClass="EditSelectedExtraNoteCollectionViewCell" customModule="ExtraNotes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UbH-Yk-rQq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="UbH-Yk-rQq" secondAttribute="bottom" id="8Hd-De-NH0"/>
+                                            <constraint firstAttribute="trailing" secondItem="UbH-Yk-rQq" secondAttribute="trailing" id="Li2-KV-9Ff"/>
+                                            <constraint firstItem="UbH-Yk-rQq" firstAttribute="top" secondItem="y2g-W9-2TL" secondAttribute="top" id="rCz-Zr-GuW"/>
+                                            <constraint firstItem="UbH-Yk-rQq" firstAttribute="leading" secondItem="y2g-W9-2TL" secondAttribute="leading" id="vCi-Pc-aK2"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="eNoteImageView" destination="UbH-Yk-rQq" id="hGO-fV-nhb"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eh6-y8-8A5" firstAttribute="top" secondItem="8Ku-nw-3tC" secondAttribute="bottom" constant="35" id="06T-6W-NUf"/>
+                            <constraint firstItem="NWv-oR-uW2" firstAttribute="bottom" secondItem="eh6-y8-8A5" secondAttribute="bottom" constant="300" id="3xa-t7-rYL"/>
+                            <constraint firstItem="8Ku-nw-3tC" firstAttribute="leading" secondItem="NWv-oR-uW2" secondAttribute="leading" constant="66" id="Nky-Ua-Fea"/>
+                            <constraint firstItem="NWv-oR-uW2" firstAttribute="trailing" secondItem="8Ku-nw-3tC" secondAttribute="trailing" constant="66" id="Skj-1E-juN"/>
+                            <constraint firstItem="NWv-oR-uW2" firstAttribute="trailing" secondItem="eh6-y8-8A5" secondAttribute="trailing" constant="16" id="WGu-3w-MHH"/>
+                            <constraint firstItem="8Ku-nw-3tC" firstAttribute="top" secondItem="NWv-oR-uW2" secondAttribute="top" constant="24" id="bdQ-0m-KO7"/>
+                            <constraint firstItem="eh6-y8-8A5" firstAttribute="leading" secondItem="NWv-oR-uW2" secondAttribute="leading" constant="16" id="zXy-lc-Ncd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NWv-oR-uW2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Extra Notes" id="Oth-50-G9N"/>
+                    <connections>
+                        <outlet property="editedExtraNoteModelCollectionView" destination="eh6-y8-8A5" id="6jg-kX-0p1"/>
+                        <outlet property="editedExtraNoteTextView" destination="8Ku-nw-3tC" id="1kO-Eu-lDq"/>
+                        <outlet property="editedExtraNoteTextViewBottomConstraint" destination="3xa-t7-rYL" id="iWR-dq-qVC"/>
+                        <outlet property="toolbar" destination="XTZ-wW-hb7" id="AfT-F0-bXG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EOA-2C-CMY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Nz8-NC-IYf" userLabel="Exit" sceneMemberID="exit"/>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.90000000000000002" contentMode="scaleToFill" barStyle="black" id="XTZ-wW-hb7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem systemItem="cancel" id="fkY-dg-tHK">
+                            <connections>
+                                <action selector="cancelENote:" destination="vJA-vV-TJw" id="fZD-ed-Zs4"/>
+                                <segue destination="Nz8-NC-IYf" kind="unwind" unwindAction="cancelledENoteWithSegue:" id="QJt-Rc-nS5"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="kqW-Wu-g1q"/>
+                        <barButtonItem style="done" systemItem="done" id="aXd-Om-gdp">
+                            <connections>
+                                <action selector="doneENote:" destination="vJA-vV-TJw" id="OCz-TT-l9a"/>
+                                <segue destination="Nz8-NC-IYf" kind="unwind" unwindAction="editExtraNoteWithSegue:" id="97B-CR-rvA"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </objects>
+            <point key="canvasLocation" x="2872.8000000000002" y="549.17541229385313"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LOX-5v-WOl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R2p-9e-3Eg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="8sI-KO-Dwy"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zx2-fp-Gf8">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FHk-ze-fES" kind="relationship" relationship="rootViewController" id="wsB-wh-4JS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uYE-2w-Nab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2852" y="-380"/>
+        </scene>
+        <!--ENotes-->
+        <scene sceneID="dpe-yZ-Nj7">
+            <objects>
+                <viewController storyboardIdentifier="SelectedExtraNoteViewController" id="7sb-4P-dAu" customClass="SelectedExtraNoteViewController" customModule="ExtraNotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFill" id="jz4-q1-i2D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueENote" translatesAutoresizingMaskIntoConstraints="NO" id="CJJ-8n-JmP">
+                                <rect key="frame" x="66" y="138" width="243" height="269"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="xih-CR-7gL"/>
+                                    <constraint firstAttribute="height" constant="269" id="yCo-RR-ym6"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vae-2C-tb0">
+                                <rect key="frame" x="106" y="158" width="163" height="229"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="vae-2C-tb0" firstAttribute="bottom" secondItem="CJJ-8n-JmP" secondAttribute="bottom" constant="-20" id="6ur-gW-DEm"/>
+                            <constraint firstItem="Y5p-4e-zAH" firstAttribute="trailing" secondItem="CJJ-8n-JmP" secondAttribute="trailing" constant="66" id="A1L-gO-35C"/>
+                            <constraint firstItem="CJJ-8n-JmP" firstAttribute="leading" secondItem="Y5p-4e-zAH" secondAttribute="leading" constant="66" id="Iom-5Q-yTh"/>
+                            <constraint firstItem="vae-2C-tb0" firstAttribute="trailing" secondItem="CJJ-8n-JmP" secondAttribute="trailing" constant="-40" id="JtP-26-9NQ"/>
+                            <constraint firstItem="vae-2C-tb0" firstAttribute="centerY" secondItem="CJJ-8n-JmP" secondAttribute="centerY" id="Mq7-bd-lst"/>
+                            <constraint firstItem="vae-2C-tb0" firstAttribute="top" secondItem="CJJ-8n-JmP" secondAttribute="top" constant="20" id="P5j-OZ-Eoy"/>
+                            <constraint firstItem="vae-2C-tb0" firstAttribute="centerX" secondItem="CJJ-8n-JmP" secondAttribute="centerX" id="e2V-3f-qcb"/>
+                            <constraint firstItem="CJJ-8n-JmP" firstAttribute="top" secondItem="Y5p-4e-zAH" secondAttribute="top" constant="50" id="kHH-Oo-BDp"/>
+                            <constraint firstItem="vae-2C-tb0" firstAttribute="leading" secondItem="CJJ-8n-JmP" secondAttribute="leading" constant="40" id="twQ-RI-HwP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y5p-4e-zAH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ENotes" id="cfg-qa-N7d"/>
+                    <connections>
+                        <outlet property="eNotesImageView" destination="CJJ-8n-JmP" id="aG6-tA-XhR"/>
+                        <outlet property="eNotesImageViewHeightConstraint" destination="yCo-RR-ym6" id="9P3-Ec-Zkm"/>
+                        <outlet property="eNotesImageViewTopConstraint" destination="kHH-Oo-BDp" id="Bf8-pw-rIZ"/>
+                        <outlet property="eNotesTextViewBottomConstraint" destination="6ur-gW-DEm" id="p0z-ak-cE3"/>
+                        <outlet property="eNotesTextViewLeftConstraint" destination="twQ-RI-HwP" id="W4M-W4-I5g"/>
+                        <outlet property="eNotesTextViewRightConstraint" destination="JtP-26-9NQ" id="3vA-yF-zmz"/>
+                        <outlet property="eNotesTextViewTopConstraint" destination="P5j-OZ-Eoy" id="J6f-o0-3hP"/>
+                        <outlet property="extraNotesTextView" destination="vae-2C-tb0" id="EYr-dR-rAG"/>
+                        <outlet property="toolbar" destination="adX-Vy-Hlo" id="g0D-Il-bw5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ug9-EQ-Q7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.90000000000000002" contentMode="scaleToFill" id="adX-Vy-Hlo">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem systemItem="cancel" id="0ZH-Ud-XvB">
+                            <connections>
+                                <segue destination="Hbe-oU-gIC" kind="unwind" unwindAction="cancelledENoteWithSegue:" id="qjK-mq-M2h"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="nHZ-Nc-OLA"/>
+                        <barButtonItem style="done" systemItem="done" id="hFU-X3-YZT">
+                            <connections>
+                                <segue destination="Hbe-oU-gIC" kind="unwind" unwindAction="createdENoteWithSegue:" id="1A0-JF-7z3"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <exit id="Hbe-oU-gIC" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="5339.130434782609" y="-339.50892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Calendar" width="25" height="25"/>
+        <image name="Help" width="25" height="25"/>
+        <image name="Plus" width="24" height="24"/>
+        <image name="Share" width="24" height="24"/>
+        <image name="Trash" width="25" height="25"/>
+        <image name="blueENote" width="298" height="269"/>
+        <image name="checkMark" width="594" height="557"/>
+    </resources>
+</document>
