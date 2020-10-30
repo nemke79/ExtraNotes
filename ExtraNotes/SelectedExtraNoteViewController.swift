@@ -76,12 +76,19 @@ class SelectedExtraNoteViewController: UIViewController {
                     eNotesTextViewLeftConstraint.constant = 40
                     eNotesTextViewRightConstraint.constant = -40
                     
-                case "iPhone XS Max", "iPhone 11 Pro Max", "iPhone 6 Plus", "iPhone 6s Plus", "iPhone 7 Plus", "iPhone 8 Plus", "iPhone XR", "iPhone 11":
+                case "iPhone XS Max", "iPhone 11 Pro Max", "iPhone 6 Plus", "iPhone 6s Plus", "iPhone 7 Plus", "iPhone 8 Plus", "iPhone XR", "iPhone 11", "iPhone 12", "iPhone 12 Pro":
                     eNotesImageViewTopConstraint.constant = 50
                     eNotesTextViewBottomConstraint.constant = -35
                     eNotesTextViewTopConstraint.constant = 20
                     eNotesTextViewLeftConstraint.constant = 60
                     eNotesTextViewRightConstraint.constant = -60
+                    
+                case  "iPhone 12 Pro Max":
+                    eNotesImageViewTopConstraint.constant = 50
+                    eNotesTextViewBottomConstraint.constant = -35
+                    eNotesTextViewTopConstraint.constant = 20
+                    eNotesTextViewLeftConstraint.constant = 70
+                    eNotesTextViewRightConstraint.constant = -70
                     
                 case "iPad Pro (12.9 inch, WiFi)", "iPad Pro (12.9 inch, WiFi+LTE)", "iPad Pro 2nd Gen (WiFi)", "iPad Pro 2nd Gen (WiFi+Cellular)", "iPad Pro 3rd Gen (12.9 inch, WiFi)", "iPad Pro 3rd Gen (12.9 inch, 1TB, WiFi)", "iPad Pro 3rd Gen (12.9 inch, WiFi+Cellular)", "iPad Pro 3rd Gen (12.9 inch, 1TB, WiFi+Cellular)", "iPad Pro 12.9 inch 4th Gen (WiFi)", "iPad Pro 12.9 inch 4th Gen (WiFi+Cellular)":
                     eNotesImageViewTopConstraint.constant = 50
@@ -90,6 +97,20 @@ class SelectedExtraNoteViewController: UIViewController {
                     eNotesTextViewLeftConstraint.constant = 370
                     eNotesTextViewRightConstraint.constant = -370
                     
+                case "iPad 7th Gen 10.2-inch (WiFi)", "iPad 7th Gen 10.2-inch (WiFi+Cellular)", "iPad 8th Gen (WiFi)", "iPad 8th Gen (WiFi+Cellular)":
+                    eNotesImageViewTopConstraint.constant = 50
+                    eNotesTextViewBottomConstraint.constant = -40
+                    eNotesTextViewTopConstraint.constant = 20
+                    eNotesTextViewLeftConstraint.constant = 270
+                    eNotesTextViewRightConstraint.constant = -270
+                    
+                case "iPad Air 4th Gen (WiFi)", "iPad Air 4th Gen (WiFi+Celular)":
+                    eNotesImageViewTopConstraint.constant = 50
+                    eNotesTextViewBottomConstraint.constant = -40
+                    eNotesTextViewTopConstraint.constant = 20
+                    eNotesTextViewLeftConstraint.constant = 270
+                    eNotesTextViewRightConstraint.constant = -270
+                    
                 case "iPad Pro 10.5-inch", "iPad Air (3rd generation)":
                     eNotesImageViewTopConstraint.constant = 50
                     eNotesTextViewBottomConstraint.constant = -40
@@ -97,7 +118,7 @@ class SelectedExtraNoteViewController: UIViewController {
                     eNotesTextViewLeftConstraint.constant = 270
                     eNotesTextViewRightConstraint.constant = -270
                     
-                case "iPad Pro 3rd Gen (11 inch, WiFi)", "iPad Pro 3rd Gen (11 inch, 1TB, WiFi)", "iPad Pro 3rd Gen (11 inch, WiFi+Cellular)", "iPad Pro 3rd Gen (11 inch, 1TB, WiFi+Cellular)":
+                case "iPad Pro 3rd Gen (11 inch, WiFi)", "iPad Pro 3rd Gen (11 inch, 1TB, WiFi)", "iPad Pro 3rd Gen (11 inch, WiFi+Cellular)", "iPad Pro 3rd Gen (11 inch, 1TB, WiFi+Cellular)", "iPad Pro 11 inch 4th Gen (WiFi)", "iPad Pro 11 inch 4th Gen (WiFi+Cellular)":
                     eNotesImageViewTopConstraint.constant = 50
                     eNotesTextViewBottomConstraint.constant = -40
                     eNotesTextViewTopConstraint.constant = 20
@@ -181,6 +202,10 @@ extension UIDevice {
         case "iPhone12,3":                              return "iPhone 11 Pro"
         case "iPhone12,5":                              return "iPhone 11 Pro Max"
         case "iPhone12,8":                              return "iPhone SE 2nd Gen"
+        case "iPhone13,1":                              return "iPhone 12 Mini"
+        case "iPhone13,2":                              return "iPhone 12"
+        case "iPhone13,3":                              return "iPhone 12 Pro"
+        case "iPhone13,4":                              return "iPhone 12 Pro Max"
         case "iPad4,1":                                 return "iPad Air (WiFi)"
         case "iPad4,2":                                 return "iPad Air (GSM+CDMA)"
         case "iPad4,3" :                                return "1st Gen iPad Air (China)"
@@ -205,6 +230,8 @@ extension UIDevice {
         case "iPad7,3" :                                return "iPad Pro 10.5-inch"
         case "iPad7,4" :                                return "iPad Pro 10.5-inch"
         case "iPad7,5" :                                return "iPad 6th Gen (WiFi)"
+        case "iPad7,11":                                return "iPad 7th Gen 10.2-inch (WiFi)"
+        case "iPad7,12":                                return "iPad 7th Gen 10.2-inch (WiFi+Cellular)"
         case "iPad7,6" :                                return "iPad 6th Gen (WiFi+Cellular)"
         case "iPad8,1" :                                return "iPad Pro 3rd Gen (11 inch, WiFi)"
         case "iPad8,2" :                                return "iPad Pro 3rd Gen (11 inch, 1TB, WiFi)"
@@ -214,12 +241,18 @@ extension UIDevice {
         case "iPad8,6" :                                return "iPad Pro 3rd Gen (12.9 inch, 1TB, WiFi)"
         case "iPad8,7" :                                return "iPad Pro 3rd Gen (12.9 inch, WiFi+Cellular)"
         case "iPad8,8" :                                return "iPad Pro 3rd Gen (12.9 inch, 1TB, WiFi+Cellular)"
+        case "iPad8,9" :                                return "iPad Pro 11 inch 4th Gen (WiFi)"
+        case "iPad8,10" :                                return "iPad Pro 11 inch 4th Gen (WiFi+Cellular)"
         case "iPad8,11":                                return "iPad Pro 12.9 inch 4th Gen (WiFi)"
         case "iPad8,12":                                return "iPad Pro 12.9 inch 4th Gen (WiFi+Cellular)"
         case "iPad11,1":                                return "iPad mini (5th generation)"
         case "iPad11,2":                                return "iPad mini (5th generation)"
         case "iPad11,3":                                return "iPad Air (3rd generation)"
         case "iPad11,4":                                return "iPad Air (3rd generation)"
+        case "iPad11,6":                                return "iPad 8th Gen (WiFi)"
+        case "iPad11,7":                                return "iPad 8th Gen (WiFi+Cellular)"
+        case "iPad13,1":                                return "iPad Air 4th Gen (WiFi)"
+        case "iPad13,2":                                return "iPad Air 4th Gen (WiFi+Celular)"
         default:
             return identifier
         }

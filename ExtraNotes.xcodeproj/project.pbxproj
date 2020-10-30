@@ -20,6 +20,7 @@
 		DF47D9E7205175B2007ED382 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF47D9E5205175B2007ED382 /* LaunchScreen.storyboard */; };
 		DF47D9F2205176EE007ED382 /* ExtraNotesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF47D9F1205176EE007ED382 /* ExtraNotesCollectionViewController.swift */; };
 		DF47D9F620517CC3007ED382 /* ExtraNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF47D9F520517CC3007ED382 /* ExtraNotes.swift */; };
+		DF61A50D254C4ED300DEE324 /* ImageValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A50C254C4ED300DEE324 /* ImageValueTransformer.swift */; };
 		DF7626A9205BFAE000EDF8AB /* SelectedExtraNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7626A8205BFAE000EDF8AB /* SelectedExtraNoteViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		DF47D9E8205175B2007ED382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF47D9F1205176EE007ED382 /* ExtraNotesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraNotesCollectionViewController.swift; sourceTree = "<group>"; };
 		DF47D9F520517CC3007ED382 /* ExtraNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraNotes.swift; sourceTree = "<group>"; };
+		DF61A50C254C4ED300DEE324 /* ImageValueTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageValueTransformer.swift; sourceTree = "<group>"; };
 		DF7626A8205BFAE000EDF8AB /* SelectedExtraNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedExtraNoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				DF47D9D9205175B2007ED382 /* AppDelegate.swift */,
+				DF61A50C254C4ED300DEE324 /* ImageValueTransformer.swift */,
 				DF47D9E0205175B2007ED382 /* ExtraNotes.xcdatamodeld */,
 				DF47D9F520517CC3007ED382 /* ExtraNotes.swift */,
 				DF47D9F1205176EE007ED382 /* ExtraNotesCollectionViewController.swift */,
@@ -140,7 +143,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Nemanja Petrovic";
 				TargetAttributes = {
 					DF47D9D5205175B2007ED382 = {
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF425E73205952D2000EBC89 /* ExtraNotesModelCollectionViewCell.swift in Sources */,
+				DF61A50D254C4ED300DEE324 /* ImageValueTransformer.swift in Sources */,
 				DF425E7120595271000EBC89 /* ExtraNotesModelCollectionViewController.swift in Sources */,
 				DF7626A9205BFAE000EDF8AB /* SelectedExtraNoteViewController.swift in Sources */,
 				DF2DC57821F866C300C5FDD7 /* HelpExtraNotesViewController.swift in Sources */,
@@ -247,6 +251,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -272,7 +277,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -306,6 +311,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -325,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -341,7 +347,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PG994VZ565;
 				INFOPLIST_FILE = ExtraNotes/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 3.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nemkepetrovic.ExtraNotes;
@@ -359,7 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PG994VZ565;
 				INFOPLIST_FILE = ExtraNotes/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 3.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nemkepetrovic.ExtraNotes;
