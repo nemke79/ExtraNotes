@@ -78,7 +78,7 @@ class EditSelectedExtraNoteViewController: UIViewController, UICollectionViewDel
         case "iPhone 6 Plus","iPhone 6s Plus","iPhone 7 Plus","iPhone 8 Plus","iPhone X","iPhone XR","iPhone XS","iPhone XS Max", "iPhone 11", "iPhone 11 Pro", "iPhone 11 Pro Max", "iPhone 12 Mini", "iPhone 12", "iPhone 12 Pro", "iPhone 12 Pro Max":
             editedExtraNoteTextViewBottomConstraint.constant = 360
             
-        case "iPad Pro (12.9 inch, WiFi)", "iPad Pro (12.9 inch, WiFi+LTE)", "iPad Pro 2nd Gen (WiFi)", "iPad Pro 2nd Gen (WiFi+Cellular)", "iPad Pro 3rd Gen (12.9 inch, WiFi)", "iPad Pro 3rd Gen (12.9 inch, 1TB, WiFi)", "iPad Pro 3rd Gen (12.9 inch, WiFi+Cellular)", "iPad Pro 3rd Gen (12.9 inch, 1TB, WiFi+Cellular)", "iPad Pro 12.9 inch 4th Gen (WiFi)", "iPad Pro 12.9 inch 4th Gen (WiFi+Cellular)":
+        case "iPad Pro (12.9 inch, WiFi)", "iPad Pro (12.9 inch, WiFi+LTE)", "iPad Pro 2nd Gen (WiFi)", "iPad Pro 2nd Gen (WiFi+Cellular)", "iPad Pro 3rd Gen (12.9 inch, WiFi)", "iPad Pro 3rd Gen (12.9 inch, 1TB, WiFi)", "iPad Pro 3rd Gen (12.9 inch, WiFi+Cellular)", "iPad Pro 3rd Gen (12.9 inch, 1TB, WiFi+Cellular)", "iPad Pro 12.9 inch 4th Gen (WiFi)", "iPad Pro 12.9 inch 4th Gen (WiFi+Cellular)", "iPad Pro 12.9 inch 5th Gen":
             editedExtraNoteTextViewBottomConstraint.constant = 500
             
         case "iPad Pro 10.5-inch", "iPad Air (3rd generation)":
@@ -90,7 +90,7 @@ class EditSelectedExtraNoteViewController: UIViewController, UICollectionViewDel
         case "iPad Air 4th Gen (WiFi)", "iPad Air 4th Gen (WiFi+Celular)":
             editedExtraNoteTextViewBottomConstraint.constant = 380
             
-        case "iPad Pro 3rd Gen (11 inch, WiFi)", "iPad Pro 3rd Gen (11 inch, 1TB, WiFi)", "iPad Pro 3rd Gen (11 inch, WiFi+Cellular)", "iPad Pro 3rd Gen (11 inch, 1TB, WiFi+Cellular)", "iPad Pro 11 inch 4th Gen (WiFi)", "iPad Pro 11 inch 4th Gen (WiFi+Cellular)":
+        case "iPad Pro 3rd Gen (11 inch, WiFi)", "iPad Pro 3rd Gen (11 inch, 1TB, WiFi)", "iPad Pro 3rd Gen (11 inch, WiFi+Cellular)", "iPad Pro 3rd Gen (11 inch, 1TB, WiFi+Cellular)", "iPad Pro 11 inch 4th Gen (WiFi)", "iPad Pro 11 inch 4th Gen (WiFi+Cellular)", "iPad Pro 11 inch 3rd Gen":
             editedExtraNoteTextViewBottomConstraint.constant = 380
             
         case "1st Gen iPad Air (China)", "iPad Air (WiFi)", "iPad Air (GSM+CDMA)", "iPad Air 2 (WiFi)", "iPad Air 2 (Cellular)", "iPad Pro (9.7 inch, WiFi)", "iPad Pro (9.7 inch, WiFi+LTE)", "iPad 6th Gen (WiFi)", "iPad 6th Gen (WiFi+Cellular)", "iPad (2017)":

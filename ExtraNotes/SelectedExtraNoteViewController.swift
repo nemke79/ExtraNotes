@@ -90,7 +90,7 @@ class SelectedExtraNoteViewController: UIViewController {
                     eNotesTextViewLeftConstraint.constant = 70
                     eNotesTextViewRightConstraint.constant = -70
                     
-                case "iPad Pro (12.9 inch, WiFi)", "iPad Pro (12.9 inch, WiFi+LTE)", "iPad Pro 2nd Gen (WiFi)", "iPad Pro 2nd Gen (WiFi+Cellular)", "iPad Pro 3rd Gen (12.9 inch, WiFi)", "iPad Pro 3rd Gen (12.9 inch, 1TB, WiFi)", "iPad Pro 3rd Gen (12.9 inch, WiFi+Cellular)", "iPad Pro 3rd Gen (12.9 inch, 1TB, WiFi+Cellular)", "iPad Pro 12.9 inch 4th Gen (WiFi)", "iPad Pro 12.9 inch 4th Gen (WiFi+Cellular)":
+                case "iPad Pro (12.9 inch, WiFi)", "iPad Pro (12.9 inch, WiFi+LTE)", "iPad Pro 2nd Gen (WiFi)", "iPad Pro 2nd Gen (WiFi+Cellular)", "iPad Pro 3rd Gen (12.9 inch, WiFi)", "iPad Pro 3rd Gen (12.9 inch, 1TB, WiFi)", "iPad Pro 3rd Gen (12.9 inch, WiFi+Cellular)", "iPad Pro 3rd Gen (12.9 inch, 1TB, WiFi+Cellular)", "iPad Pro 12.9 inch 4th Gen (WiFi)", "iPad Pro 12.9 inch 4th Gen (WiFi+Cellular)", "iPad Pro 12.9 inch 5th Gen":
                     eNotesImageViewTopConstraint.constant = 50
                     eNotesTextViewBottomConstraint.constant = -40
                     eNotesTextViewTopConstraint.constant = 20
@@ -118,7 +118,7 @@ class SelectedExtraNoteViewController: UIViewController {
                     eNotesTextViewLeftConstraint.constant = 270
                     eNotesTextViewRightConstraint.constant = -270
                     
-                case "iPad Pro 3rd Gen (11 inch, WiFi)", "iPad Pro 3rd Gen (11 inch, 1TB, WiFi)", "iPad Pro 3rd Gen (11 inch, WiFi+Cellular)", "iPad Pro 3rd Gen (11 inch, 1TB, WiFi+Cellular)", "iPad Pro 11 inch 4th Gen (WiFi)", "iPad Pro 11 inch 4th Gen (WiFi+Cellular)":
+                case "iPad Pro 3rd Gen (11 inch, WiFi)", "iPad Pro 3rd Gen (11 inch, 1TB, WiFi)", "iPad Pro 3rd Gen (11 inch, WiFi+Cellular)", "iPad Pro 3rd Gen (11 inch, 1TB, WiFi+Cellular)", "iPad Pro 11 inch 4th Gen (WiFi)", "iPad Pro 11 inch 4th Gen (WiFi+Cellular)", "iPad Pro 11 inch 3rd Gen":
                     eNotesImageViewTopConstraint.constant = 50
                     eNotesTextViewBottomConstraint.constant = -40
                     eNotesTextViewTopConstraint.constant = 20
@@ -253,6 +253,14 @@ extension UIDevice {
         case "iPad11,7":                                return "iPad 8th Gen (WiFi+Cellular)"
         case "iPad13,1":                                return "iPad Air 4th Gen (WiFi)"
         case "iPad13,2":                                return "iPad Air 4th Gen (WiFi+Celular)"
+        case "iPad13,4":                                return "iPad Pro 11 inch 3rd Gen"
+        case "iPad13,5":                                return "iPad Pro 11 inch 3rd Gen"
+        case "iPad13,6":                                return "iPad Pro 11 inch 3rd Gen"
+        case "iPad13,7":                                return "iPad Pro 11 inch 3rd Gen"
+        case "iPad13,8":                                return "iPad Pro 12.9 inch 5th Gen"
+        case "iPad13,9":                                return "iPad Pro 12.9 inch 5th Gen"
+        case "iPad13,10":                                return "iPad Pro 12.9 inch 5th Gen"
+        case "iPad13,11":                                return "iPad Pro 12.9 inch 5th Gen"
         default:
             return identifier
         }
