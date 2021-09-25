@@ -75,7 +75,7 @@ class EditSelectedExtraNoteViewController: UIViewController, UICollectionViewDel
         
         // If device is with bigger screen then change textview bottom constraint because keyboard covers collection view of models for Extra Notes.
         switch UIDevice.current.modelName {
-        case "iPhone 6 Plus","iPhone 6s Plus","iPhone 7 Plus","iPhone 8 Plus","iPhone X","iPhone XR","iPhone XS","iPhone XS Max", "iPhone 11", "iPhone 11 Pro", "iPhone 11 Pro Max", "iPhone 12 Mini", "iPhone 12", "iPhone 12 Pro", "iPhone 12 Pro Max":
+        case "iPhone 6 Plus","iPhone 6s Plus","iPhone 7 Plus","iPhone 8 Plus","iPhone X","iPhone XR","iPhone XS","iPhone XS Max", "iPhone 11", "iPhone 11 Pro", "iPhone 11 Pro Max", "iPhone 12 Mini", "iPhone 12", "iPhone 12 Pro", "iPhone 12 Pro Max", "iPhone 13 Pro Max", "iPhone 13 Pro", "iPhone 13 Mini", "iPhone 13":
             editedExtraNoteTextViewBottomConstraint.constant = 360
             
         case "iPad Pro (12.9 inch, WiFi)", "iPad Pro (12.9 inch, WiFi+LTE)", "iPad Pro 2nd Gen (WiFi)", "iPad Pro 2nd Gen (WiFi+Cellular)", "iPad Pro 3rd Gen (12.9 inch, WiFi)", "iPad Pro 3rd Gen (12.9 inch, 1TB, WiFi)", "iPad Pro 3rd Gen (12.9 inch, WiFi+Cellular)", "iPad Pro 3rd Gen (12.9 inch, 1TB, WiFi+Cellular)", "iPad Pro 12.9 inch 4th Gen (WiFi)", "iPad Pro 12.9 inch 4th Gen (WiFi+Cellular)", "iPad Pro 12.9 inch 5th Gen":
@@ -84,7 +84,7 @@ class EditSelectedExtraNoteViewController: UIViewController, UICollectionViewDel
         case "iPad Pro 10.5-inch", "iPad Air (3rd generation)":
             editedExtraNoteTextViewBottomConstraint.constant = 380
             
-        case "iPad 7th Gen 10.2-inch (WiFi)", "iPad 7th Gen 10.2-inch (WiFi+Cellular)", "iPad 8th Gen (WiFi)", "iPad 8th Gen (WiFi+Cellular)":
+        case "iPad 7th Gen 10.2-inch (WiFi)", "iPad 7th Gen 10.2-inch (WiFi+Cellular)", "iPad 8th Gen (WiFi)", "iPad 8th Gen (WiFi+Cellular)", "iPad 9th Gen (WiFi)", "iPad 9th Gen (WiFi+Cellular)":
             editedExtraNoteTextViewBottomConstraint.constant = 380
             
         case "iPad Air 4th Gen (WiFi)", "iPad Air 4th Gen (WiFi+Celular)":
@@ -96,7 +96,7 @@ class EditSelectedExtraNoteViewController: UIViewController, UICollectionViewDel
         case "1st Gen iPad Air (China)", "iPad Air (WiFi)", "iPad Air (GSM+CDMA)", "iPad Air 2 (WiFi)", "iPad Air 2 (Cellular)", "iPad Pro (9.7 inch, WiFi)", "iPad Pro (9.7 inch, WiFi+LTE)", "iPad 6th Gen (WiFi)", "iPad 6th Gen (WiFi+Cellular)", "iPad (2017)":
             editedExtraNoteTextViewBottomConstraint.constant = 380
             
-        case "iPad mini Retina (WiFi)", "iPad mini Retina (GSM+CDMA)", "iPad mini Retina (China)" ,"iPad mini 3 (WiFi)", "iPad mini 3 (GSM+CDMA)", "iPad Mini 3 (China)", "iPad mini 4 (WiFi)", "4th Gen iPad mini (WiFi+Cellular)", "iPad mini (5th generation)":
+        case "iPad mini Retina (WiFi)", "iPad mini Retina (GSM+CDMA)", "iPad mini Retina (China)" ,"iPad mini 3 (WiFi)", "iPad mini 3 (GSM+CDMA)", "iPad Mini 3 (China)", "iPad mini 4 (WiFi)", "4th Gen iPad mini (WiFi+Cellular)", "iPad mini 5th Gen (WiFi)", "iPad mini 5th Gen", "iPad mini 6th Gen (WiFi)", "iPad mini 6th Gen (WiFi+Cellular)":
             editedExtraNoteTextViewBottomConstraint.constant = 380
             
         default:
